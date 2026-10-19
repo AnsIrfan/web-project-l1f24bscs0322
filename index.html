@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Bean | Café &amp; Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
+  <header class="site-header">
+    <a class="brand" href="index.html">Kopi Bean</a>
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="nav-button">Menu</label>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="media.html">Menu</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Kopi Bean</h1>
+      <p class="tagline">A little bean. A lot of character.</p>
+      <a class="button" href="media.html">Explore the menu</a>
+    </section>
+
+    <section id="intro">
+      <h2>Coffee bar. <em>Bakery.</em> One <strong>warm</strong> room.</h2>
+      <p>Specialty coffee and fresh bakes, made daily.</p>
+    </section>
+
+    <section class="showcase coffee">
+      <h2>From the coffee bar</h2>
+      <div class="cards">
+        <article class="card"><img src="https://img.magnific.com/free-photo/closeup-classic-fresh-espresso-served-dark-surface_1220-5375.jpg?semt=ais_hybrid&w=740&q=80" width="600" height="450" alt="Espresso in a small white cup"><h3>Espresso</h3><p class="price">PKR 350</p></article>
+        <article class="card"><img src="https://beautifulingredient.com/wp-content/uploads/2022/03/refined-sugar-free-vegan-caramel-latte.jpg" width="600" height="450" alt="Latte with milk art"><h3>Caramel Latte</h3><p class="price">PKR 550</p></article>
+        <article class="card"><img src="https://www.nescafe.com/nz/sites/default/files/styles/image_webp_conversion/public/2023-09/NESCAF%C3%89%20Cappuccino.jpg.webp?itok=jM5-wBXI" width="600" height="450" alt="Cappuccino on a wooden table"><h3>Cappuccino</h3><p class="price">PKR 480</p></article>
+      </div>
+    </section>
+
+    <section class="showcase bakery">
+      <h2>From the bakery</h2>
+      <div class="cards">
+        <article class="card"><img src="https://thebutterycrust.com/wp-content/uploads/2025/11/How-to-make-Croissants-FEAT.jpg" width="600" height="450" alt="Golden butter croissants"><h3>Butter Croissant</h3><p class="price">PKR 320</p></article>
+        <article class="card"><img src="https://butternutbakeryblog.com/wp-content/uploads/2023/04/chocolate-cake-683x1024.jpg" width="600" height="450" alt="Slice of chocolate cake"><h3>Chocolate Cake</h3><p class="price">PKR 650</p></article>
+        <article class="card"><img src="https://krollskorner.com/wp-content/uploads/2025/10/Small-Batch-CCC_HighRes-011-scaled.jpg" width="600" height="450" alt="Chocolate chip cookies"><h3>Choc Chip Cookie</h3><p class="price">PKR 220</p></article>
+      </div>
+    </section>
+
+    <section id="discover">
+      <h2>Discover</h2>
+      <p><a href="media.html">Menu</a> &middot; <a href="register.html">Join the Bean Club</a> &middot; <a href="index.html">Home</a></p>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 Kopi Bean &middot; From the bean to grind</p></footer>
 </body>
 </html>

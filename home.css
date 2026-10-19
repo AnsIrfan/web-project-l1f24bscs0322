@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Inter", Arial, sans-serif; font-size: 1rem; line-height: 1.6; color: #38251D; background-color: #FAF5ED; }
+h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; line-height: 1.2; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: #8B654A; }
+
+.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 1rem 5%; background-color: #38251D; }
+.brand { font-family: "Playfair Display", Georgia, serif; font-size: 1.6rem; font-weight: 700; color: #F3E8D7; text-decoration: none; }
+.main-nav a { color: #F3E8D7; text-decoration: none; margin-left: 1.2rem; font-size: 0.95rem; }
+.main-nav a:hover, .main-nav a:focus { color: #B88A5A; }
+.planned::after { content: " (soon)"; font-size: 0.7rem; opacity: 0.7; }
+#nav-toggle, .nav-button { display: none; }
+
+#hero { text-align: center; padding: 8rem 1rem; color: #FAF5ED; background-color: #38251D; background-image: linear-gradient(rgba(56,37,29,0.6), rgba(56,37,29,0.6)), url("https://i1.pickpik.com/photos/281/753/279/arabica-aromatic-beverage-black-coffee-591ee135ccb76ce0847b6a663e6ff49f.jpg"); background-size: cover; background-position: center 45%; }
+#hero h1 { font-size: 4rem; margin: 0; letter-spacing: 2px; }
+.tagline { font-size: 1.25rem; font-style: italic; color: #D8C0A5; }
+.button { display: inline-block; margin-top: 1rem; padding: 0.8rem 2rem; background-color: #B88A5A; color: #38251D; font-weight: 600; text-decoration: none; border: 2px solid #B88A5A; border-radius: 30px; }
+.button:hover { background-color: transparent; color: #FAF5ED; }
+
+#intro { text-align: center; padding: 3.5rem 1rem; background-color: #F3E8D7; }
+#intro h2 { font-size: 2rem; margin: 0 0 0.5rem; }
+#intro em { color: #8B654A; }
+#intro strong { color: #B88A5A; }
+
+.showcase { padding: 3.5rem 5%; text-align: center; }
+.showcase h2 { font-size: 2rem; margin-top: 0; }
+.coffee { background-color: #D8C0A5; }
+.bakery { background-color: #FAF5ED; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+.card { background-color: #FAF5ED; border: 1px solid #B88A5A; border-radius: 10px; overflow: hidden; padding-bottom: 1rem; }
+.bakery .card { background-color: #F3E8D7; }
+.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card h3 { margin: 0.8rem 0 0.2rem; font-size: 1.25rem; }
+.price { margin: 0; font-weight: 600; color: #8B654A; }
+
+#discover { padding: 3rem 1rem; text-align: center; color: #F3E8D7; background-color: #8B654A; }
+#discover a { color: #FAF5ED; }
+.site-footer { padding: 1.2rem; text-align: center; font-size: 0.85rem; color: #D8C0A5; background-color: #38251D; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 700px) {
+  #hero h1 { font-size: 2.8rem; }
+  .nav-button { display: block; color: #F3E8D7; border: 1px solid #B88A5A; padding: 0.3rem 0.8rem; cursor: pointer; }
+  .main-nav { display: none; width: 100%; }
+  #nav-toggle:checked ~ .main-nav { display: block; }
+  .main-nav a { display: block; margin: 0.6rem 0 0; }
+}
