@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | Kopi Bean</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="register.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Kopi Bean</a>
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-button">Menu</label>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="media.html">Menu</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </header>
+    <section id="welcome">
+      <h1>Your Coffee Journey Starts Here.</h1>
+      <p>Join Kopi Bean, collect Kopi Points with every purchase, and enjoy rewards along the way.</p>
+      <a class="button" href="#signup">Join Now</a>
+    </section>
+    <main id="register">
+      <aside id="points">
+        <h2>Kopi Points</h2>
+        <p class="slogan">Collect 10 Kopi Points. Fill your jar. Treat yourself!</p>
+        <div class="jar" role="img" aria-label="Example jar with 4 of 10 beans collected">
+          <span class="bean filled"></span>
+          <span class="bean filled"></span>
+          <span class="bean filled"></span>
+          <span class="bean filled"></span>
+          <span class="bean"></span>
+          <span class="bean"></span>
+          <span class="bean"></span>
+          <span class="bean"></span>
+          <span class="bean"></span>
+          <span class="bean"></span>
+        </div>
+        <p class="count">4 of 10 beans collected</p>
+        <h3>Choose your reward</h3>
+        <ul class="rewards">
+          <li>
+            <h4>Free Regular Coffee</h4>
+            <p>Any regular coffee, on us.</p>
+          </li>
+          <li>
+            <h4>Specialty Upgrade</h4>
+            <p>Upgrade to a specialty coffee.</p>
+          </li>
+          <li>
+            <h4>Bakery Item</h4>
+            <p>Pick any bakery item you like.</p>
+          </li>
+          <li>
+            <h4>Pastry or Dessert</h4>
+            <p>A sweet finish, completely free.</p>
+          </li>
+        </ul>
+      </aside>
+      <form id="signup" action="#" method="post">
+        <h2>Create Your Account</h2>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="first">First name</label>
+            <input type="text" id="first" name="first" placeholder="e.g. Ayesha" minlength="2" maxlength="20" required>
+          </p>
+          <p>
+            <label for="last">Last name</label>
+            <input type="text" id="last" name="last" placeholder="e.g. Khan" minlength="2" maxlength="20" required>
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </p>
+          <p>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="0300 1234567" maxlength="12">
+          </p>
+          <p>
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob" min="1940-01-01" max="2026-11-16">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Account Information</legend>
+          <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="4 to 15 characters" minlength="4" maxlength="15" required>
+          </p>
+          <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+          </p>
+          <p>
+            <label for="confirm">Confirm password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Type it again" minlength="8" required>
+          </p>
+          <p>
+            <label for="start">Starting balance</label>
+            <input type="text" id="start" name="start" value="0 Kopi Points" readonly>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Preferences</legend>
+          <p>
+            <label for="coffee">Favourite coffee</label>
+            <select id="coffee" name="coffee">
+              <option value="" disabled selected>Choose your favourite</option>
+              <option value="espresso">Espresso</option>
+              <option value="americano">Americano</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="latte">Caramel Latte</option>
+            </select>
+          </p>
+          <p>
+            <label for="visit">Preferred visit time</label>
+            <input type="time" id="visit" name="visit">
+          </p>
+          <p>
+            <label for="strength">Coffee strength (mild to strong)</label>
+            <input type="range" id="strength" name="strength" min="1" max="5" value="3">
+          </p>
+          <p>
+            <label for="weekly">Coffees per week</label>
+            <input type="number" id="weekly" name="weekly" min="0" max="14" value="3">
+          </p>
+          <p>
+            <label for="colour">Favourite colour</label>
+            <input type="color" id="colour" name="colour" value="#8B654A">
+          </p>
+          <fieldset class="choices">
+            <legend>Preferred contact method</legend>
+            <label><input type="radio" name="contact" value="email" checked> Email</label>
+            <label><input type="radio" name="contact" value="phone"> Phone call</label>
+            <label><input type="radio" name="contact" value="none"> Do not contact me</label>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information</legend>
+          <p>
+            <label for="notes">Special requests (optional)</label>
+            <textarea id="notes" name="notes" rows="4" maxlength="200" placeholder="Allergies, favourite milk, anything we should know"></textarea>
+          </p>
+          <p>
+            <label for="profile">Social profile or website (optional)</label>
+            <input type="url" id="profile" name="profile" placeholder="https://instagram.com/yourname">
+          </p>
+          <p>
+            <label for="photo">Profile picture (optional)</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </p>
+        </fieldset>
+        <div class="agree">
+          <label><input type="checkbox" name="terms" required> I agree to the Kopi Bean terms and conditions</label>
+          <label><input type="checkbox" name="updates" checked> Send me Kopi Points updates and offers</label>
+        </div>
+        <button type="submit">Create My Account</button>
+        <p class="note">Joining Kopi Points is free.</p>
+        <p class="note">Already a member? <a href="#">Sign in</a></p>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 Kopi Bean &middot; From the bean to grind</p>
+    </footer>
+  </body>
+</html>
